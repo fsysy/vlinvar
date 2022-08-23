@@ -1,3 +1,4 @@
+#-*- encoding: utf-8 -*-
 import xml.etree.ElementTree as et
 import gzip
 import pandas as pd
@@ -63,6 +64,7 @@ operating_option = 1 #clinvarassertion 정리
 #operating_option = 2 #clinvarset 정리
 print(f"operating option: {operating_option}")
 if operating_option == 1:
+    print("start")
     for event, element in file_data:
         if element.tag != "ClinVarAssertion":
             continue
@@ -73,6 +75,7 @@ if operating_option == 1:
             if key_item not in dfs:
                 dfs[key_item] = [""]*(get_max_index(dfs)-1)
             dfs[key_item].append("||".join(df[key_item]))
+        
         max_index = get_max_index(dfs)
         for key_item in dfs.keys():
             if len(dfs[key_item]) < max_index:
