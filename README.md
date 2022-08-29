@@ -11,4 +11,8 @@ this site is very useful for the initiation (https://pinggoopark.tistory.com/122
 the database name is clinvar.
 
 
-
+# MySQL command
+use clinvar;
+show tables;
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='CLINVARSET';
+ALTER TABLE CLINVARSET MODIFY CLINVARACCESSION_ACC varchar(20);
