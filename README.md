@@ -12,6 +12,8 @@ the database name is clinvar.
 
 
 # MySQL command
+sudo mysql -u root
+
 use clinvar;
 
 show tables;
