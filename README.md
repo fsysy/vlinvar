@@ -36,9 +36,9 @@ select column_name,data_type from information_schema.columns where table_name = 
 
 # MySQL data type
 ClinvarSet
-+------------------------------+-----------+
+
 | column_name                  | data_type |
-+------------------------------+-----------+
+|------------------------------|-----------|
 | ID                           | int       |
 | SYMBOL                       | varchar   |
 | STATUS                       | varchar   |
@@ -63,13 +63,13 @@ ClinvarSet
 | REF                          | text      |
 | ALT                          | text      |
 | CLINVAR_ASSERT_ID            | varchar   |
-+------------------------------+-----------+
+
 
 
 CLINVARASSERTION
-+------------------------------+------------+
+
 | column_name                  | data_type  |
-+------------------------------+------------+
+|------------------------------|------------|
 | ID                           | varchar    |
 | LOCALKEY                     | varchar    |
 | SUBMITTER                    | varchar    |
@@ -94,7 +94,7 @@ CLINVARASSERTION
 | METHODTYPE                   | varchar    |
 | OBSERVED_DATA                | mediumtext |
 | SYMBOL                       | varchar    |
-+------------------------------+------------+
+
 
 
 
