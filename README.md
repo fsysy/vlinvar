@@ -30,4 +30,73 @@ ALTER TABLE CLINVARSET CONVERT TO CHARACTER SET utf8;
 
 ALTER TABLE `CLINVARSET` ADD `CHROMOSOME` VARCHAR(10) AFTER MEASURESET_ALTERNATE;
 
+select column_name,data_type from information_schema.columns where table_name = 'CLINVARSET';
+
+
+
+# MySQL data type
+ClinvarSet
++------------------------------+-----------+
+| column_name                  | data_type |
++------------------------------+-----------+
+| ID                           | int       |
+| SYMBOL                       | varchar   |
+| STATUS                       | varchar   |
+| TITLE                        | varchar   |
+| DATECREATED                  | varchar   |
+| DATELASTUPDATED              | varchar   |
+| REFCLINVAR_ID                | varchar   |
+| CLINVARACCESSION_ACC         | varchar   |
+| CLINVARACCESSION_VERSION     | varchar   |
+| CLINVARACCESSION_DATEUPDATED | varchar   |
+| CLINVARRECORDSTATUS          | varchar   |
+| CLINVARSIG_DATELASTEVALUATED | varchar   |
+| CLINVARSIG_REVIEWSTATUS      | varchar   |
+| CLINVARSIG_DESCRIPTION       | varchar   |
+| MEASURESET_ID                | varchar   |
+| MEASURESET_ACC               | varchar   |
+| MEASURESET_VERSION           | varchar   |
+| MEASURESET_PREFERRED         | varchar   |
+| MEASURESET_ALTERNATE         | varchar   |
+| CHROMOSOME                   | varchar   |
+| POSITION                     | int       |
+| REF                          | text      |
+| ALT                          | text      |
+| CLINVAR_ASSERT_ID            | varchar   |
++------------------------------+-----------+
+
+
+CLINVARASSERTION
++------------------------------+------------+
+| column_name                  | data_type  |
++------------------------------+------------+
+| ID                           | varchar    |
+| LOCALKEY                     | varchar    |
+| SUBMITTER                    | varchar    |
+| SUBMITTER_DATE               | varchar    |
+| TITLE                        | varchar    |
+| ACC                          | varchar    |
+| ACC_VERSION                  | varchar    |
+| ACC_TYPE                     | varchar    |
+| ACC_ORGID                    | varchar    |
+| ACC_DATE                     | varchar    |
+| RECORDSTATUS                 | varchar    |
+| CLINCALSIGNIFICANCE_LASTDATE | varchar    |
+| REVIEWSTATUS                 | varchar    |
+| DESCRIPTION                  | varchar    |
+| COMMENT                      | text       |
+| ASSERTION_TYPE               | varchar    |
+| EXTDB                        | varchar    |
+| EXTDB_ID                     | varchar    |
+| SAMPLE                       | varchar    |
+| SPECIES                      | varchar    |
+| AFFECTEDSTATUS               | varchar    |
+| METHODTYPE                   | varchar    |
+| OBSERVED_DATA                | mediumtext |
+| SYMBOL                       | varchar    |
++------------------------------+------------+
+
+
+
+
 
